@@ -10,7 +10,7 @@ import java.util.UUID;
 @Header(name = "Accept", value = "application/json")
 public interface OrderProcessingService {
 
-    @Post("/orders/v2/create1")
+    @Post("/orders/v2/create")
     String createOrder(@Body String request);
 
     @Get("/orders/v2/{orderId}/details")
