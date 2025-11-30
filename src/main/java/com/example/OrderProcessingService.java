@@ -12,8 +12,7 @@ public interface OrderProcessingService {
 
     @Post("/orders/v2/create1")
     String createOrder(@Body String request);
-    
-    @Header(name = "Authorization", value = "Bearer ${app.service-token}")
+
     @Get("/orders/v2/{orderId}/details")
     String getOrderDetails(@PathVariable UUID orderId);
 
